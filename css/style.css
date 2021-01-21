@@ -1,0 +1,433 @@
+/* General */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+    color: #6c757d;
+}
+
+.r-p {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.r-m {
+    margin-top: 20px;
+}
+
+.section-bg {
+    background:#f8f9fa;
+}
+
+.r-btn{
+    padding: 5px 20px;
+    background-color:#ee8683 !important ;
+    color: #fff !important;
+}
+
+#top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    background: #000 url('../images/upw.png');
+    border-radius: 50%;
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#top:hover{
+    
+    background: #e65f78 url('../images/upw.png');
+    border-radius: 50%;
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    z-index: 10000;
+
+}
+
+#top.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+/* 
+body {
+    background: #000;
+}
+*/
+
+/*Navigation*/
+nav.r-nav {
+    background: transparent;
+    padding: 20px 0;
+    transition: .5s all;
+}
+
+nav .navbar-brand{
+    font-size: 30px;
+    color:#fff;
+}
+
+nav .navbar-nav li a {
+    color: rgba(255,255,255,0.8) !important;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Nunito',sans-serif;
+}
+
+nav .navbar-nav li{
+    margin-left: 15px;
+}
+
+nav.r-nav.stickyadd {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px 0;
+    box-shadow: 0 1px 8px 3px rgba(0,0,0,0.05);
+    transition: .5s all ease-in-out;
+    
+}
+
+nav.stickyadd .navbar-brand{
+    color: #000;
+    font-size: 40px;
+    transition: .5s all;
+}
+
+nav.stickyadd .navbar-nav .nav-link {
+    color:#000 !important;
+    float: right;
+}
+
+.navbar .navbar-toggler {
+    color:#fff;
+}
+
+nav.stickyadd .navbar-toggler {
+    color: #000;
+}
+
+/* Header */
+
+header {
+    height: 700px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/Winner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+
+.element{
+    color: #e65f78;
+    font-weight: bolder;
+}
+
+.header-content {
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-box {
+    max-width: 700px;
+    color:#fff;
+}
+
+.content-box p {
+    
+    color:#fff;
+}
+
+
+.content-box h4 {
+    font-size: 30px;
+}
+
+.content-box h1 {
+    font-size: 52px;
+}
+
+.content-box a {
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 5px 25px;
+}
+
+.content-box a:hover{
+    color: #000;
+    background: #fff;
+}
+
+
+/* About */
+.about li a{
+    color:#000;
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+    font-size: 20px;
+    border: 2px solid #d4d4d4;
+    border-radius: 50%;
+    line-height: 40px;
+    transition: 0.5s all;
+    text-align: center;
+}
+
+.about li a:hover{
+    color: #6c757d;
+}
+
+#about{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* Experience */
+
+.exp-class .progress {
+    height: 10px;
+    border-radius: 20px;
+    font-size:10px;
+}
+
+.progress-bar{
+    background-color: #ee8683;
+}
+
+.exp-class label{
+    font-size: 20px;
+    margin:10px;
+}
+
+.exp-class h3{
+    font-size: 70px !important;
+}
+
+ 
+/* Service Section */
+
+#services {
+    transition: ease-in-out;
+    transition-delay: 0s;
+}
+
+.card,.card-header{
+    background: #f8f9fa !important;
+}
+
+.card-header {
+    border: none !important;
+}
+
+.services-class .card-header i{
+    font-size: 50px;
+}
+
+.special {
+    font-size: 50px;
+}
+
+.service-border {
+    height:2px;
+    width: 40px;
+    margin: 15px auto;
+    background: #e65f78;
+}
+
+/* Testimonials */
+
+.testimonial{
+    background: #e65f78;
+}
+
+.section-padding {
+    padding: 60px 0;
+
+}
+
+.testimonial-carousel{
+    margin: 5% auto;
+}
+
+.img-area {
+    width: 100px;
+    height: 100px;
+    display: block;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.img-area img {
+    width: 100px
+}
+
+.testimony {
+    background: #fff;
+    padding: 10%;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.img-text h2 {
+    font-size: 26px;
+    font-weight: bold;
+    Text-transform: uppercase;
+    margin: 20px 0;
+    color: #ee8683;
+}
+
+.img-text p {
+    font-style: italic;
+    font-size: small;
+    line-height: 1.5em;
+    margin-top: 10px;
+}
+
+.owl-nav {
+    text-align: center;
+    font-size: 36px;
+    
+    color:#fff;
+}
+
+.owl-prev, .owl-next{
+    display:inline-block;
+    height: 50px !important;
+    width: 50px !important;
+    background: #fff;
+    opacity: 0.8;
+    border-radius: 50%;
+    margin: 50px 5px 0;
+}
+
+.owl-prev:hover{
+    background: #fff;
+}
+
+/* Portfolio*/
+
+.gallery {
+    margin: 40px auto;
+    padding: 20px;
+   
+}
+
+.gallery ul{
+    display:flex;
+    margin-bottom: 10px;
+}
+
+.gallery ul li{
+    list-style: none;
+    background: #f8f9fa;
+    padding: 8px 20px;
+    padding:5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.gallery ul li.active {
+    background: #ee8683;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.portfolio {
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+
+@media (min-width: 750px) {
+    .portfolio {
+        width: 100%;
+        margin: none;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    
+}
+
+.portfolio .item-box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+}
+
+.portfolio .item-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contact*/
+
+.contact .btn-primary {
+    background: #e65f78;
+    width: 150px;
+    border-width: 0;
+    border-radius: 5px;
+}
+
+.contact .btn-primary:hover {
+    cursor: pointer;
+    color: #e65f78;
+    background: rgba(255, 255, 255, 0);
+    border-color: #e65f78;
+    border-width: 3px;
+    box-shadow: inset;
+}
+
+
+/* Footer */
+
+footer {
+    background: rgb(20, 20, 20);
+    color: #d4d4d4;
+}
+
+footer .social {
+    font-size: 30px;
+}
+
+footer a {
+    color: #d4d4d4;
+}
+
+footer a:hover {
+    color: #fff;
+    font-size: 34px;
+    padding: 10px;
+}
